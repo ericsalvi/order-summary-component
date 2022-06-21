@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+body {
+  background-color: #e0e8ff;
+  background-image: url("/images/pattern-background-mobile.svg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: #7280a7;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  padding: 24px;
+  place-content: center;
+}
+
+main article {
+  background: white;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 45px 30px -25px rgba(56, 41, 224, 0.15);
+  box-shadow: 0px 45px 30px -25px rgba(56, 41, 224, 0.15);
+  max-width: 450px;
+}
+
+main article .card__img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: auto;
+  width: 100%;
+}
+
+main article .card__info {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 30px 24px 16px;
+  -webkit-transition: padding 0.3s ease-in-out;
+  transition: padding 0.3s ease-in-out;
+}
+
+main article .card__info h1 {
+  font-size: 1.375rem;
+  font-weight: 900;
+  color: #1f2f56;
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+main article .card__info > p {
+  font-size: 0.938rem;
+  line-height: 1.65;
+  text-align: center;
+  margin-bottom: 24px;
+  padding: 0 10px;
+}
+
+main article .card__info .card__pricing {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #f5f7ff;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-bottom: 22px;
+  padding: 18px 15px;
+  width: 100%;
+}
+
+main article .card__info .card__pricing .price {
+  font-size: 0.875rem;
+}
+
+main article .card__info .card__pricing .price h2 {
+  font-size: inherit;
+  font-weight: 900;
+  color: #1f2f56;
+  padding-bottom: 6px;
+}
+
+main article .card__info .card__pricing .price p {
+  font-weight: 700;
+}
+
+main article .card__info .card__pricing a {
+  color: #3829e0;
+  font-size: 0.813rem;
+  font-weight: 700;
+  line-height: 35px;
+  margin-left: auto;
+  padding: 2px 2px 0 0;
+}
+
+main article .card__info .card__pricing a:hover {
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+main article .card__info .card__pricing a:visited {
+  color: #3829e0;
+}
+
+main article .card__info button {
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.938rem;
+  font-weight: 900;
+  padding: 16.5px 32px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  width: 100%;
+}
+
+main article .card__info button.payment {
+  background-color: #3829e0;
+  color: white;
+  margin-bottom: 9px;
+  -webkit-box-shadow: 0px 15px 25px 0px rgba(56, 41, 224, 0.26);
+  box-shadow: 0px 15px 25px 0px rgba(56, 41, 224, 0.26);
+}
+
+main article .card__info button.payment:hover {
+  opacity: 0.6;
+}
+
+main article .card__info button.cancel-order {
+  background-color: transparent;
+  color: #7280a7;
+}
+
+main article .card__info button.cancel-order:hover {
+  color: #1f2f56;
+}
+
+@media (min-width: 600px) {
+  body {
+    background-image: url("/images/pattern-background-desktop.svg");
+  }
+  main article .card__info {
+    padding: 44px 48px 33px;
+  }
+  main article .card__info h1 {
+    font-size: 1.75rem;
+  }
+  main article .card__info > p {
+    font-size: 1rem;
+    margin-bottom: 18px;
+  }
+  main article .card__info .card__pricing {
+    margin-bottom: 32px;
+    padding: 25px;
+    padding-right: 22px;
+  }
+  main article .card__info .card__pricing .price {
+    font-size: 1rem;
+  }
+  main article .card__info .card__pricing .price h2 {
+    padding-bottom: 8px;
+  }
+  main article .card__info .card__pricing a {
+    font-size: 0.875rem;
+  }
+  main article .card__info button.payment {
+    margin-bottom: 17px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

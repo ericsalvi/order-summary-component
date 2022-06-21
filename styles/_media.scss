@@ -1,0 +1,46 @@
+@media (min-width: 600px) {
+  body {
+    background-image: url("/images/pattern-background-desktop.svg");
+  }
+
+  main {
+    article {
+      .card__info {
+        padding: 44px 48px 33px;
+
+        h1 {
+          font-size: 1.75rem;
+        }
+
+        & > p {
+          font-size: 1rem;
+          margin-bottom: 18px;
+        }
+
+        .card__pricing {
+          margin-bottom: 32px;
+          padding: 25px;
+          padding-right: 22px;
+
+          .price {
+            font-size: 1rem;
+
+            h2 {
+              padding-bottom: 8px;
+            }
+          }
+
+          a {
+            font-size: 0.875rem;
+          }
+        }
+
+        button {
+          &.payment {
+            margin-bottom: 17px;
+          }
+        }
+      }
+    }
+  }
+}
