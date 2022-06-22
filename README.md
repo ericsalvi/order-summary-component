@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [FrontendMentor.io](https://www.frontendmentor.io/solutions/order-summary-component-scss-mobilefirst-bem-semantic-html-tXyAT3PE47)
 - Live Site URL: [https://ericsalvi.github.io/order-summary-component/](https://ericsalvi.github.io/order-summary-component/)
 
 ## My process
